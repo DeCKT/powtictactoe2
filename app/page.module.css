@@ -1,0 +1,50 @@
+.page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+}
+
+.boardRow {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+  height: calc(100% / 3);
+}
+
+.boardRow:nth-child(2) {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.boardCell {
+  padding: 15px;
+  aspect-ratio: 1/1;
+}
+
+.boardCell:nth-child(2) {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.cell:nth-child(2) {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
